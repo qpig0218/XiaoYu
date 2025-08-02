@@ -97,25 +97,6 @@
             height: 350px;
         }
     }
-
-    .gemini-modal {
-        animation: fadeIn 0.3s ease;
-    }
-
-    .gemini-spinner {
-        border: 4px solid rgba(0, 0, 0, 0.1);
-        border-left-color: #81b29a;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-        to {
-            transform: rotate(360deg);
-        }
-    }
     </style>
 </head>
 <body class="bg-primary text-primary">
@@ -172,34 +153,25 @@
                     </div>
 
                     <div id="mission" class="tab-content text-left p-4 md:p-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-2xl font-bold text-secondary mb-3">建立「使命驅動」的團隊</h3>
-                                <p class="leading-relaxed">我們的起點不是一份規格書，而是一個共同的願景：「要照顧病人，先照顧醫護同仁」。我以此為北極星，引導所有決策都與此對齊。當團隊方向有所偏離時，我會召開「校準會議」，讓大家重新聚焦於為使用者創造真實價值的初衷。</p>
-                            </div>
-                            <button class="gemini-qna-btn ml-4 flex-shrink-0 bg-secondary text-secondary border border-secondary hover:bg-green-50 rounded-full p-2" data-context-title="使命驅動" data-context-content="我們的起點不是一份規格書，而是一個共同的願景：「要照顧病人，先照顧醫護同仁」。我以此為北極星，引導所有決策都與此對齊。當團隊方向有所偏離時，我會召開「校準會議」，讓大家重新聚焦於為使用者創造真實價值的初衷。">✨ AI 提問</button>
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">建立「使命驅動」的團隊</h3>
+                            <p class="leading-relaxed">我們的起點不是一份規格書，而是一個共同的願景：「要照顧病人，先照顧醫護同仁」。我以此為北極星，引導所有決策都與此對齊。當團隊方向有所偏離時，我會召開「校準會議」，讓大家重新聚焦於為使用者創造真實價值的初衷。</p>
                         </div>
                     </div>
                     <div id="empowerment" class="tab-content text-left p-4 md:p-6 hidden">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-2xl font-bold text-secondary mb-3">賦能而非管理</h3>
-                                <p class="leading-relaxed mb-4">我推動「模組負責制」，讓每位成員成為自己領域的「當責者」，擁有決策權與資源。這賦予團隊極高的自主性與行動力。</p>
-                                <div class="bg-primary p-4 rounded-lg border-l-4 border-secondary">
-                                    <p class="font-semibold">案例分享：</p>
-                                    <p class="text-sm md:text-base">當奇美醫院護理師反應語音辨識問題時，我並未介入指揮，而是確保負責的工程師能直接與使用者溝通，並在 24 小時內完成優化、一週內正式佈署。</p>
-                                </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">賦能而非管理</h3>
+                            <p class="leading-relaxed mb-4">我推動「模組負責制」，讓每位成員成為自己領域的「當責者」，擁有決策權與資源。這賦予團隊極高的自主性與行動力。</p>
+                            <div class="bg-primary p-4 rounded-lg border-l-4 border-secondary">
+                                <p class="font-semibold">案例分享：</p>
+                                <p class="text-sm md:text-base">當奇美醫院護理師反應語音辨識問題時，我並未介入指揮，而是確保負責的工程師能直接與使用者溝通，並在 24 小時內完成優化、一週內正式佈署。</p>
                             </div>
-                            <button class="gemini-qna-btn ml-4 flex-shrink-0 bg-secondary text-secondary border border-secondary hover:bg-green-50 rounded-full p-2" data-context-title="賦能而非管理" data-context-content="我推動「模組負責制」，讓每位成員成為自己領域的「當責者」，擁有決策權與資源。這賦予團隊極高的自主性與行動力。例如，當奇美醫院護理師反應語音辨識問題時，我並未介入指揮，而是確保負責的工程師能直接與使用者溝通，並在 24 小時內完成優化、一週內正式佈署。">✨ AI 提問</button>
                         </div>
                     </div>
                     <div id="feedback" class="tab-content text-left p-4 md:p-6 hidden">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-2xl font-bold text-secondary mb-3">將「回饋」內化為 DNA</h3>
-                                <p class="leading-relaxed">我最大的挑戰是打破不同專業領域間的隔閡。透過引導使用者訪談、共創工作坊，讓工程師能理解護理師的焦慮，讓醫師能看懂設計師的流程圖。我們將每一次使用者回饋都視為最寶貴的禮物，並透過 AI 知識庫將學習經驗沉澱，讓每一次的失敗都成為下一次成功的基石。</p>
-                            </div>
-                            <button class="gemini-qna-btn ml-4 flex-shrink-0 bg-secondary text-secondary border border-secondary hover:bg-green-50 rounded-full p-2" data-context-title="回饋內化" data-context-content="我最大的挑戰是打破不同專業領域間的隔閡。透過引導使用者訪談、共創工作坊，讓工程師能理解護理師的焦慮，讓醫師能看懂設計師的流程圖。我們將每一次使用者回饋都視為最寶貴的禮物，並透過 AI 知識庫將學習經驗沉澱，讓每一次的失敗都成為下一次成功的基石。">✨ AI 提問</button>
+                        <div>
+                            <h3 class="text-2xl font-bold text-secondary mb-3">將「回饋」內化為 DNA</h3>
+                            <p class="leading-relaxed">我最大的挑戰是打破不同專業領域間的隔閡。透過引導使用者訪談、共創工作坊，讓工程師能理解護理師的焦慮，讓醫師能看懂設計師的流程圖。我們將每一次使用者回饋都視為最寶貴的禮物，並透過 AI 知識庫將學習經驗沉澱，讓每一次的失敗都成為下一次成功的基石。</p>
                         </div>
                     </div>
                 </div>
@@ -266,17 +238,6 @@
                         <p>賦予團隊最大的自主權，讓他們能心無旁鶩地衝刺。</p>
                     </div>
                 </div>
-
-                <div class="max-w-3xl mx-auto bg-primary p-6 md:p-8 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold text-center mb-4">✨ 您的敏捷教練</h3>
-                    <p class="text-center text-gray-600 mb-6">輸入您團隊面臨的挑戰，讓 AI 根據本一科技的敏捷精神，為您生成實踐建議。</p>
-                    <textarea id="gemini-suggestion-input" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:outline-none" rows="3" placeholder="例如：我們的團隊成員不敢承擔責任，常常需要等待指令..."></textarea>
-                    <button id="gemini-suggestion-btn" class="mt-4 w-full bg-secondary text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition-colors" style="background-color: #81b29a;">生成建議</button>
-                    <div id="gemini-suggestion-output" class="mt-6 text-left hidden">
-                        <div class="gemini-spinner mx-auto"></div>
-                        <p class="text-gray-700 leading-relaxed whitespace-pre-wrap"></p>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -288,24 +249,6 @@
             <p class="text-xs mt-4">&copy; 2025 TaiOne AiTech. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <div id="gemini-qna-modal" class="gemini-modal hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-        <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl p-6 md:p-8 relative">
-            <button id="gemini-qna-close-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
-            <h3 id="gemini-qna-title" class="text-2xl font-bold text-secondary mb-4">✨ 深度提問</h3>
-            <p class="text-gray-600 mb-6">
-                針對「
-                <span id="gemini-qna-context-title" class="font-semibold"></span>
-                」原則，您可以提出更深入的問題。
-            </p>
-            <textarea id="gemini-qna-input" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-secondary focus:outline-none" rows="3" placeholder="請在此輸入您的問題..."></textarea>
-            <button id="gemini-qna-submit-btn" class="mt-4 w-full bg-secondary text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition-colors" style="background-color: #81b29a;">發送問題</button>
-            <div id="gemini-qna-output" class="mt-6 text-left hidden">
-                <div class="gemini-spinner mx-auto"></div>
-                <p class="text-gray-700 leading-relaxed whitespace-pre-wrap"></p>
-            </div>
-        </div>
-    </div>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -437,139 +380,6 @@
             });
         });
 
-        const callGeminiAPI = async (prompt, outputElement, maxRetries=3, delay=1000) => {
-            const spinner = outputElement.querySelector('.gemini-spinner');
-            const textElement = outputElement.querySelector('p');
-
-            outputElement.classList.remove('hidden');
-            spinner.classList.remove('hidden');
-            textElement.textContent = '';
-
-            let chatHistory = [{
-                role: "user",
-                parts: [{
-                    text: prompt
-                }]
-            }];
-            const payload = {
-                contents: chatHistory
-            };
-            const apiKey = "";
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-            for (let i = 0; i < maxRetries; i++) {
-                try {
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-
-                    const result = await response.json();
-
-                    spinner.classList.add('hidden');
-                    if (result.candidates && result.candidates.length > 0 &&
-                    result.candidates[0].content && result.candidates[0].content.parts &&
-                    result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        textElement.textContent = text;
-                    } else {
-                        textElement.textContent = '抱歉，無法生成回應。請稍後再試。';
-                    }
-                    return;
-                } catch (error) {
-                    console.error(`Attempt ${i + 1} failed:`, error);
-                    if (i === maxRetries - 1) {
-                        spinner.classList.add('hidden');
-                        textElement.textContent = '抱歉，目前無法連接到 AI 服務，請稍後再試。';
-                    } else {
-                        await new Promise(res => setTimeout(res, delay * Math.pow(2, i)));
-                    }
-                }
-            }
-        };
-
-        const qnaModal = document.getElementById('gemini-qna-modal');
-        const qnaOpenBtns = document.querySelectorAll('.gemini-qna-btn');
-        const qnaCloseBtn = document.getElementById('gemini-qna-close-btn');
-        const qnaSubmitBtn = document.getElementById('gemini-qna-submit-btn');
-        const qnaInput = document.getElementById('gemini-qna-input');
-        const qnaOutput = document.getElementById('gemini-qna-output');
-        const qnaContextTitle = document.getElementById('gemini-qna-context-title');
-        let currentQnAContext = {};
-
-        qnaOpenBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                currentQnAContext = {
-                    title: btn.dataset.contextTitle,
-                    content: btn.dataset.contextContent
-                };
-                qnaContextTitle.textContent = currentQnAContext.title;
-                qnaInput.value = '';
-                qnaOutput.classList.add('hidden');
-                qnaModal.classList.remove('hidden');
-            });
-        });
-
-        qnaCloseBtn.addEventListener('click', () => qnaModal.classList.add('hidden'));
-        qnaModal.addEventListener('click', (e) => {
-            if (e.target === qnaModal) {
-                qnaModal.classList.add('hidden');
-            }
-        });
-
-        qnaSubmitBtn.addEventListener('click', () => {
-            const userQuestion = qnaInput.value.trim();
-            if (!userQuestion) {
-                alert('請輸入您的問題。');
-                return;
-            }
-            const prompt = `您是一位名叫邱瓊玉的科技公司執行長，正在申請敏捷大賞的「年度變革引導者」。您的風格是溫暖、有同理心且具策略性的。請根據以下背景資訊和原則，回答使用者的問題。
-
-背景資訊：本一科技是一家將 AI 應用於醫療照護的跨領域團隊。我們的初衷是「要照顧醫院病人，先要照顧醫護同仁」。
-
-我所秉持的原則是「${
-
-
-            currentQnAContext.title}」：${currentQnAContext.content}
-
-現在，請以邱瓊玉的身份，用第一人稱（我）和繁體中文回答以下問題：
-「${
-
-            userQuestion}」`;
-
-            callGeminiAPI(prompt, qnaOutput);
-        });
-
-        const suggestionBtn = document.getElementById('gemini-suggestion-btn');
-        const suggestionInput = document.getElementById('gemini-suggestion-input');
-        const suggestionOutput = document.getElementById('gemini-suggestion-output');
-
-        suggestionBtn.addEventListener('click', () => {
-            const userChallenge = suggestionInput.value.trim();
-            if (!userChallenge) {
-                alert('請描述您團隊面臨的挑戰。');
-                return;
-            }
-            const prompt = `您是一位資深的敏捷教練，深刻理解本一科技 CEO 邱瓊玉的領導哲學。她的核心理念是「敏捷是關於人的化學反應」，並強調「使命驅動」、「賦能當責」與「回饋內化」。
-
-現在，有一個團隊面臨以下挑戰：
-「${
-
-            userChallenge}」
-
-請根據邱瓊玉的敏捷精神，為這個團隊提供 3 個具體、可行的實踐建議。請用繁體中文、條列式的方式呈現，並保持溫暖、鼓勵的語氣。`
-
-            ;
-
-            callGeminiAPI(prompt, suggestionOutput);
-        });
     });
     </script>
 
